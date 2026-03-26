@@ -56,10 +56,10 @@ public class JavaCode {
                 double result = 0;
 
                 System.out.print("Please provide your first number: ");
-                double number1 = input.nextInt();
+                double number1 = input.nextDouble();
 
                 System.out.print("Please provide your second number: ");
-                double number2 = input.nextInt();
+                double number2 = input.nextDouble();
                 
                 //Choice is Addition
                 if (choice == 1){
@@ -93,14 +93,13 @@ public class JavaCode {
                 //Turns off calculator if desired
                 if (continueChoice == 2){
                     turnOn = false;
+                    System.out.println("Goodbye");
                 }
 
             }
             else{
                 System.out.println("You provided an incorrect option.");
             }
-
-            System.out.println("Goodbye");
 
         }
     }
