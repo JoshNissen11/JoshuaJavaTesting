@@ -57,11 +57,9 @@ public class JavaCode {
 
                 System.out.print("Please provide your first number: ");
                 double number1 = input.nextInt();
-                System.out.println();
 
                 System.out.print("Please provide your second number: ");
                 double number2 = input.nextInt();
-                System.out.println();
                 
                 //Choice is Addition
                 if (choice == 1){
@@ -82,6 +80,7 @@ public class JavaCode {
                 
                 //Providing result
                 System.out.println("Result: " + result);
+                System.out.println();
 
                 //Asking the user if they would like to perform another function
                 System.out.println("Would you like to perform another function?");
@@ -91,8 +90,9 @@ public class JavaCode {
                 int continueChoice = input.nextInt();
                 System.out.println();
 
+                //Turns off calculator if desired
                 if (continueChoice == 2){
-                    fail = true;
+                    turnOn = false;
                 }
 
             }
